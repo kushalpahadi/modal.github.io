@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #333;
+}
+
+html{
+    font-size: 62.5%;
+
+    @media (max-width:600px){
+        font-size: 40%;
+    }
+}
+
+
+body{
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.buttons__holder{
+    width: 100%;
+  height: 22vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+    
+
+    @media (max-width:600px){
+        flex-direction: column;
+        
+        gap: 50px;
+        height: 100vh;
+    }
+
+
+    .buttons{
+        border: none;
+        cursor: pointer;
+        color: #444;
+        font-size: 2rem;
+        font-weight: 600;
+        border-radius: 10rem;
+        padding: 17.5px 35px;
+      
+ 
+        
+    }
+}
+
+
+.modal{
+   width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #ffffff;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+    padding: 60px;
+border-radius: 5px;
+@media (max-width:600px){
+    padding: 40px 10px;
+}
+
+    .close-modal{
+        position: absolute;
+        top: 12px;
+        right: 20px;
+        font-size: 5rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 1.8rem;
+        line-height: 28px;
+    }
+}
+
+
+.overlay{
+    height: 100vh;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+
+.hidden{
+    display: none;
+}
+
